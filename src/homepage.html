@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<title>UltraMessage</title>
+		<link rel="stylesheet" href="css/homepageStyles.css"></link>
+
+		<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script> 
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+		<script src="js/encr-decr.js"></script>
+	</head>     
+	<body>
+	
+		<button id="newChatButton" class="optionButtons" onclick="createNewChat()">New Chat</button>
+		
+
+		<button id="accountSettingsButton" class="optionButtons" onclick="viewAccountSettings()">Account Settings</button>
+		<button id="logoutButton" class="optionButtons" onclick="logout()">Logout</button>
+
+		<div id="contactsPanelDIV">
+			<label id="chatsLabel" class="infoText">Chats:</label>
+			<br id="spec"><br id="spec"><br id="spec">
+		</div>
+
+		<div id="chatPanelDIV">
+			<label id="chatName"></label>
+			<br id="spec"><br id="spec"><br id="spec"><br id="spec">
+		</div>
+
+		
+		<div id="typePanelDIV">
+			<input id="messageInput" autocomplete="off" type="text"> 
+			<button id="sendButton" onclick="sendMessage()" class="optionButtons">Send</button>
+
+		</div>
+
+
+
+		<script>
+			var firebaseConfig = {
+			    apiKey: "AIzaSyBsz6HbTse8aNB4Xbtc-6d5LQFsfGaHatI",
+			    authDomain: "ultra-f4eb9.firebaseapp.com",
+			    projectId: "ultra-f4eb9",
+			    storageBucket: "ultra-f4eb9.appspot.com",
+			    databaseURL: "https://ultra-f4eb9-default-rtdb.firebaseio.com/",
+			    messagingSenderId: "412659898029",
+			    appId: "1:412659898029:web:6a03632d2c745286695824",
+			    measurementId: "G-P3MTE52HHX"
+			};
+			  
+			firebase.initializeApp(firebaseConfig);
+		</script>
+		<script src="js/homepageMain.js"></script>
+	</body>
+</html>

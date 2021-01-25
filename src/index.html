@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>UltraMessage</title>
+		<link rel="stylesheet" href="css/indexStyles.css">
+		
+	</head>
+	<body id="mainBody">
+		<div id="mainDIV">
+			<div id="centreItemsDIV">
+				<div id="ultraLabelDIV">
+					<label id="mainTitle">UltraMessage</label>
+				</div>
+				<div id="buttonCentreDIV">
+					<button id="signUpButton" class="screenButton" onclick="signUp()">Register</button>
+					<br><br><br>
+					<button id="signInButton" class="screenButton" onclick="signIn()">Login</button>
+				</div>
+				<div id="themeToggleDIV">
+					<div id="textDIV">
+						<label id="darkModeSwitch">Dark Mode:</label>
+					</div>
+					<br><br><br>
+					<label class="switch">
+					  	<input type="checkbox" onclick="checkMode()" value="off" id="themeCheckbox">
+					  	<span class="slider round" id="mainSlider"></span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<script src="js/indexMain.js"></script>
+
+		<script>
+			setupCanvas();
+		</script>
+	</body>
+</html>

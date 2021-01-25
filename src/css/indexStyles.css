@@ -1,0 +1,134 @@
+body{              
+	background-image: url(https://images.hdqwalls.com/download/city-4k-buildings-skyscraper-view-l3-1920x1080.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: rgb(255, 255, 255);
+}
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: rgb(66, 117, 245);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(66, 117, 245);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+#textDIV{
+	position: absolute;
+	top: 5px;
+}
+
+#darkModeSwitch{
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 20px;
+	color: rgb(0, 0, 0);
+}
+
+
+#themeToggleDIV{
+	display: inline-block;
+	text-align: center;
+	position: absolute;
+	bottom: 30px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+}
+#mainTitle{
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	position: absolute;
+	top: 30px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    font-size: 60px;
+}
+#centreItemsDIV{
+	border-radius: 45px;
+	background: rgb(255, 255, 255);
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 46%;
+}
+#buttonCentreDIV{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}	
+
+.screenButton{
+	font-weight: bold;
+	outline: none;
+	border: none;
+	padding: 10px;
+	border-radius: 45px;
+	width: 200px;
+	height: 60px;
+	background-color: rgb(66, 117, 245);
+	color: rgb(255, 255, 255);
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 28px;
+}

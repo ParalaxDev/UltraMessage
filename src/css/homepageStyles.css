@@ -1,0 +1,222 @@
+ body{
+	background-color: rgb(255, 255, 255);
+}
+.breakSpace{
+	
+}
+.breakFeature{
+	content: "";
+}
+.adminMessage{
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 21px;
+	height: 35px;
+	border-style: solid;
+	border-radius: 25px;
+	border-color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	outline: none;
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
+	font-weight: normal;
+}
+.incomingMessage{
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 21px;
+	height: 35px;
+	border-style: solid;
+	border-radius: 25px;
+	border-color: rgb(7, 109, 235);
+	color: rgb(255, 255, 255);
+	background-color: rgb(7, 109, 235);
+	outline: none;
+	position: absolute;
+	left: 1%;
+
+}
+.outgoingMessage{
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 21px;
+	height: 35px;
+	border-style: solid;
+	border-radius: 25px;
+	border-color: rgb(32, 235, 14);
+	color: rgb(255, 255, 255);
+	background-color: rgb(32, 235, 14);
+	outline: none;
+	position: absolute;
+	right: 1%;
+	
+
+}
+
+
+
+
+
+
+
+
+.contactButton{
+	height: 60px;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	outline: none;
+	border: 0.5px solid grey;
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 25px;
+	text-align: left;
+}
+
+
+#optionPanelDIV{
+	position: absolute;
+	top: 10px;
+	left: ;	
+}
+
+.optionButtons{
+	font-weight: bold;
+	outline: none;
+	border: none;
+	padding: 10px;
+	border-radius: 45px;
+	width: 25%;
+	height: 9%;
+	background-color: rgb(66, 117, 245);
+	color: rgb(255, 255, 255);
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 24px;
+}
+
+#newChatButton{
+	position: absolute;
+	top: 1%;
+	left: 1%;
+}
+#accountSettingsButton{
+	position: absolute;
+	top: 11%;
+	left: 1%;
+}
+#logoutButton{
+	position: absolute;
+	top: 21%;
+	left: 1%;
+}
+#contactsPanelDIV{
+	border-style: solid;
+	border-color: rgb(0, 0, 0);
+	border-radius: 20px;
+	position: absolute;
+	left: 1%;
+	top: 31%;
+	height: 68%;
+	width: 25%;
+	overflow: auto;
+}
+#chatPanelDIV{
+	position: absolute;
+	border-radius: 20px;
+	border-style: solid;
+	border-color: rgb(0, 0, 0);
+	left: 27%; 
+	top: 1%;
+	width: 72%;
+	height: 87%;
+	overflow: auto;
+}
+#typePanelDIV{
+	position: absolute;
+	top: 89%;
+	left: 27%;
+	width: 72%;
+	height: 10%;
+}
+#sendButton{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: 50%;
+	transform: translate(228%, -50%);
+	font-weight: bold;
+	outline: none;
+	border: none;
+	padding: 10px;
+	border-radius: 45px;
+	width: 15%;
+	height: 90%;
+	background-color: rgb(66, 117, 245);
+	color: rgb(255, 255, 255);
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 24px;
+}
+#messageInput{
+	height: 90%;
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-60%, -50%);
+	border-radius: 45px;
+	outline: none;
+	color: rgb(0, 0, 0);
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 28px;
+}
+
+.infoText{
+	color: rgb(0, 0, 0);
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 34px;
+	font-weight: bolder;
+}
+#chatsLabel{
+	position: absolute;
+	top: 2px;
+	left: 5px;
+	font-size: 41px;
+}
+
+
+#chatName{
+	color: rgb(0, 0, 0);
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	left:50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0%);
+}
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(125, 128, 133, 0.5);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-track { 
+    border-radius: 5px; 
+} 

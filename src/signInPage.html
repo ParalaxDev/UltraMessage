@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Login</title>
+		<link rel="stylesheet" href="css/signinStyles.css">
+		<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script> 
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+		<script src="js/encr-decr.js"></script>
+	</head>
+	<body>
+
+		<div id="mainDIV">
+			<div id="titleDIV">
+				<label id="mainTitle">Login</label>
+			</div>
+
+			<div id="userEntryDIV">
+				<button id="backButton" class="btns" onclick="back()">Back</button>
+				<br><br>
+				<div id="usernameDIV">
+					<label id="usernameLabel" class="labelText">Username:</label><label class="errorText" style="display:none" id="usernameError">   Username not found.</label>
+					<br>
+					<input type="text" autocomplete="off" id="usernameInput" class="dataInput">
+				</div>
+
+				<br>
+
+				<div id="passwordDIV" style="display:none">
+					<label id="passwordLabel" class="labelText">Password:</label><label class="errorText" style="display:none"  id="passwordError">   This password is not correct.</label>
+					<br>
+					<input type="password" autocomplete="off" id="passwordInput" class="dataInput">
+				</div>
+				<br>
+				<div id="sbDIV">
+					<button id="submitButton" class="btns" onclick="checkPassword()" style="display:none">Sign In</button>
+				</div>
+			</div>
+			<div id="themeToggleDIV">
+				<div id="textDIV">
+					<label id="darkModeSwitch">Dark Mode:</label>
+				</div>
+				<br>
+				<label class="switch">
+				  	<input type="checkbox" onclick="checkMode()" value="off" id="themeCheckbox">
+				  	<span class="slider round" id="mainSlider"></span>
+				</label>
+			</div>
+		</div>
+
+		
+		<script>
+			var firebaseConfig = {
+			    apiKey: "AIzaSyBsz6HbTse8aNB4Xbtc-6d5LQFsfGaHatI",
+			    authDomain: "ultra-f4eb9.firebaseapp.com",
+			    projectId: "ultra-f4eb9",
+			    storageBucket: "ultra-f4eb9.appspot.com",
+			    databaseURL: "https://ultra-f4eb9-default-rtdb.firebaseio.com/",
+			    messagingSenderId: "412659898029",
+			    appId: "1:412659898029:web:6a03632d2c745286695824",
+			    measurementId: "G-P3MTE52HHX"
+			  };
+			  
+			  firebase.initializeApp(firebaseConfig);
+		</script>
+		
+		<script src="js/signinMain.js"></script>
+
+	</body>
+</html>   

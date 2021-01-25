@@ -1,0 +1,45 @@
+body{              
+	background-image: url(https://images.hdqwalls.com/download/city-4k-buildings-skyscraper-view-l3-1920x1080.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: rgb(255, 255, 255);
+}
+#mainDIV{
+	background-color: rgb(255, 255, 255);
+	border-radius: 45px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	height: 600px;
+}
+#titleDIV{
+	border-radius: 45px;
+	position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+	width: 100%;
+}
+#mainTitle{
+	color: rgb(0, 0, 0);
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	position: absolute;
+	top: 30px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+}
+#accountLabelsDIV{
+	position: absolute;
+	top: 15%;
+	left: 5%;
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 28px;
+}

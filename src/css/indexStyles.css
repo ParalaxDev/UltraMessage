@@ -93,8 +93,6 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-
-
 #textDIV{
 	position: absolute;
 	top: 5px;
@@ -106,7 +104,6 @@ input:checked + .slider:before {
 	color: rgb(0, 0, 0);
 }
 
-
 #themeToggleDIV{
 	display: inline-block;
 	text-align: center;
@@ -116,6 +113,7 @@ input:checked + .slider:before {
     margin-right: -50%;
     transform: translate(-50%, 0%);
 }
+
 #mainTitle{
     font-family: "Roboto","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 	color: var(--font-color);
@@ -127,6 +125,7 @@ input:checked + .slider:before {
     transform: translate(-50%, 0%);
     font-size: 50px;
 }
+
 #centreItemsDIV{
     position: absolute;
 	top: 50%;
@@ -140,6 +139,7 @@ input:checked + .slider:before {
     border-radius: 25px;
     transition: 0.25s;
 }
+
 #buttonCentreDIV{
 	position: absolute;
 	top: calc(50% + 125px);

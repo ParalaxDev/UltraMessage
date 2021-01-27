@@ -73,11 +73,7 @@
 }
 
 
-#optionPanelDIV{
-	position: absolute;
-	top: 10px;
-	left: ;	
-}
+
 
 .optionButtons{
 	font-weight: bold;
@@ -85,7 +81,7 @@
 	border: none;
 	padding: 10px;
 	border-radius: 45px;
-	width: 25%;
+	width: 7%;
 	height: 9%;
 	background-color: rgb(66, 117, 245);
 	color: rgb(255, 255, 255);
@@ -100,13 +96,13 @@
 }
 #accountSettingsButton{
 	position: absolute;
-	top: 11%;
-	left: 1%;
+	top: 1%;
+	left: 10%;
 }
 #logoutButton{
 	position: absolute;
-	top: 21%;
-	left: 1%;
+	top: 1%;
+	left: 19%;
 }
 #contactsPanelDIV{
 	border-style: solid;
@@ -114,8 +110,8 @@
 	border-radius: 20px;
 	position: absolute;
 	left: 1%;
-	top: 31%;
-	height: 68%;
+	top: 11%;
+	height: 88%;
 	width: 25%;
 	overflow: auto;
 }
@@ -140,29 +136,29 @@
 #sendButton{
 	position: absolute;
 	top: 50%;
-	left: 50%;
-	margin-right: 50%;
-	transform: translate(228%, -50%);
+	right: 1%;
+	transform: translate(0%, -50%);
 	font-weight: bold;
 	outline: none;
 	border: none;
 	padding: 10px;
 	border-radius: 45px;
-	width: 15%;
+	width: 7%;
 	height: 90%;
 	background-color: rgb(66, 117, 245);
 	color: rgb(255, 255, 255);
 	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-	font-size: 24px;
+	font-size: 30px;
 }
 #messageInput{
 	height: 90%;
-	width: 80%;
+	width: 90%;
 	position: absolute;
 	top: 50%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-60%, -50%);
+	left: 0%;
+
+	
+	transform: translate(0%, -50%);
 	border-radius: 45px;
 	outline: none;
 	color: rgb(0, 0, 0);

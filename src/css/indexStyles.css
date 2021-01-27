@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
-body, html{              
+.theme-light {
+    --color-primary: #4275f5;
+    --color-secondary: #ffffff;
+    --font-color: #000000;
+ }.theme-dark {
+    --color-primary: #4275f5;
+    --color-secondary: #243133;
+    --font-color: #ffffff;
+ }
+
+
+
+
+body, html{
     height: 100%;
     margin: 0px;
     padding: 0px;
@@ -103,7 +116,7 @@ input:checked + .slider:before {
 }
 #mainTitle{
     font-family: "Roboto","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-	color: rgb(0, 0, 0);
+	color: var(--font-color);
 	font-weight: lighter;
 	position: absolute;
 	top: 175px;
@@ -120,7 +133,7 @@ input:checked + .slider:before {
     height: 589px;
     width: 500px;
 
-    background: #FFFFFF;
+    background: var(--color-secondary);
     box-shadow: 0px 12px 16px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
 }
@@ -136,14 +149,15 @@ input:checked + .slider:before {
 	padding: 10px;
 	width: 200px;
 	height: 60px;
-	background-color: rgb(66, 117, 245);
-	color: rgb(255, 255, 255);
+	background-color: var(--color-primary);
+	color: var(--color-secondary);
 	font-family: "Roboto","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     font-size: 28px;
     font-weight: normal;
     box-shadow: 0px 6px 16px 4px rgba(0, 0, 0, 0.25);
     border-radius: 100px;
     border: none;
+    color: #ffffff;
 }
 
 .icon{
@@ -151,4 +165,16 @@ input:checked + .slider:before {
     /* transform: translate(-100%, -100%); */
     top: -30px;
     left: 100px
+}
+
+#theme-switcher{
+    border: none;
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    bottom: 15px;
+    right: 15px;
+    z-index: 9999;
 }

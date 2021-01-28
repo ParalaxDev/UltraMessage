@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+.theme-light {
+    --color-primary: #4275f5;
+    --color-secondary: #ffffff;
+    --font-color: #262020;
+ }.theme-dark {
+    --color-primary: #4275f5;
+    --color-secondary: #262020;
+    --font-color: #ffffff;
+ }
+
+body, html{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+
+    background-color: var(--color-secondary);
+    
+}
+
+.bg-img{
+    background-image: url(https://images.hdqwalls.com/download/city-4k-buildings-skyscraper-view-l3-1920x1080.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+    /* background-size: 120%; */
+    
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    height: 100%;
+    width: auto;
+
+}
+
+.screenButton{
+	padding: 10px;
+	width: 200px;
+	height: 60px;
+    outline: none;
+	background-color: var(--color-primary);
+    color: var(--color-secondary);
+    
+	font-family: "Roboto","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    
+    box-shadow: 0px 6px 16px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.screenButton:hover{
+    box-shadow: none;
+    /* box-shadow: inset 0px 6px 16px 4px rgba(0, 0, 0, 0.02); */
+}
+
+#theme-switcher{
+    border: none;
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: var(--color-secondary);
+    bottom: 15px;
+    outline: none;
+    right: 15px;
+    z-index: 9999;
+    cursor: pointer;
+    box-shadow: 0px 6px 16px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.25s ease-in-out;
+}
+
+#theme-switcher:hover{
+    box-shadow: none;
+}
+
+#theme-switcher svg{
+    fill: var(--font-color);
+}
